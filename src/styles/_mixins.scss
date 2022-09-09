@@ -1,0 +1,22 @@
+// =============================================================================
+// Font Face
+// =============================================================================
+
+@mixin font-face($name, $weight: null, $style: null) {
+  $src: url("../assets/fonts/Montserrat/" + $name + '.ttf') format('ttf');
+
+  @font-face {
+    font-family: quote($name);
+    font-style: $style;
+    font-weight: $weight;
+    src: $src;
+  }
+}
+
+@mixin breakpoint($point) {
+  @if $point == md {
+    @media (min-width: 48em) {
+        @content;
+    }
+  }
+}

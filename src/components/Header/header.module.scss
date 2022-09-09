@@ -1,0 +1,10 @@
+@import "../../styles/_fonts.scss";
+@import "../../styles/_colors.scss";
+
+.header-container {
+    display: flex;
+    height: 57px;
+    justify-content: center;
+    align-items: center;
+    background-color: $dark;
+}
