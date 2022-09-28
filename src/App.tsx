@@ -1,9 +1,13 @@
 import React from 'react';
 import Routes from "./routes";
+import {ThemeProvider} from "styled-components";
+import theme from "./theme/theme";
 
 function App() {
   return (
-    <Routes/>
+      <ThemeProvider theme={theme}>
+        <Routes/>
+      </ThemeProvider>
   );
 }
 
